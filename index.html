@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Quan Ly Sinh Vien</h1>
+    <input type="text" id="id_DC" placeholder="nhập điểm chuẩn" />
+    <input type="text" id="toan" placeholder="TOAN" />
+    <input type="text" id="ly" placeholder="LY" />
+    <input type="text" id="hoa" placeholder="HOA" />
+    <input type="text" id="uuTienKV" placeholder=" Uu Tien Khu VUC" />
+    <input type="text" id="uuTienDT" placeholder="Uu Tien DOI TUONG" />
+    <button onclick="hocSinh()">Kiem tra</button>
+    <div id="showDiem"></div>
+    <h1>Tinh Tien Dien</h1>
+    <input type="text" id="hoTen" placeholder="Nhap ten" />
+    <input type="text" id="Dien" placeholder="Nhap so Dien" />
+    <button onclick="TienDien()">Kiem Tra</button>
+    <div id="showTienDien"></div>
+    <h1>Tinh thue thu nhap ca nhan</h1>
+    <input type="text" id="HoTen" placeholder="Nhap ho va Ten" />
+    <input type="text" id="thuNhap" placeholder="Thu Nhap" />
+    <input type="text" id="soNguoi" placeholder="So Nguoi Phu Thuoc" />
+    <button onclick="thueCaNhan()">Kiem Tra</button>
+    <div id="showThuNhap"></div>
+    <h2>Tính Hóa Đơn Cáp</h2>
+
+    <div class="form-group">
+        <input type="text" id="maKh" placeholder="Nhập mã khách hàng">
+    </div>
+
+    <div class="form-group">
+        <button onclick="chonNhaDan()">Nhà Dân</button>
+        <button onclick="chonDoanhNghiep()">Doanh Nghiệp</button>
+    </div>
+
+    <div class="form-group" id="ketNoiField">
+        <input type="number" id="soKetNoi" placeholder="Nhập số kết nối" min="0">
+    </div>
+
+    <div class="form-group">
+        <input type="number" id="soKenh" placeholder="Nhập số kênh cao cấp" min="0">
+    </div>
+
+    <div class="form-group">
+        <button onclick="tinhHoaDon()">Tính Hóa Đơn</button>
+    </div>
+
+    <div id="ketQua"></div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
